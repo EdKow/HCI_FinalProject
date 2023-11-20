@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p>On our Padlet mental health website, we emphasize the importance of respecting others' privacy. 
+            We believe in creating a supportive and safe space where individuals can freely share their mental health stories. 
+            Your stories are valuable contributions to our community, and we encourage open dialogue while ensuring a respectful environment 
+            for everyone involved.</p>
+          <button class="enterbutton" id="enterButton">Enter</button>
+        </div>
+      </div>
+
+      <div class="heading">
+        <div class="headingtext">
+          <i class="fa-solid fa-ghost"></i>
+          <h1 style="user-select: none;">SoulShare</h1>
+      </div>
+        <h3 class="bookmark"><a href="bookmark.html"><i class="fa-regular fa-bookmark"></i></a></h3>
+        <h3 class="clicked" style="user-select: none;"><a href="dashboard.html">Post a story</a></h3>
+        
+        
+      </div>
+      <div class="writepop" id="writepop">
+        
+        <div class="close" id="close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div>
+          <form action="">
+            <input class="title" type="text" name="Title" placeholder="Title" required><br>
+            <textarea name="content" id="content" class="content" cols="30" rows="10" placeholder="..."></textarea><br>
+            <select name="Tags" id="Tags">
+              <option value="-">-</option>
+              <option value="work">Work</option>
+              <option value="home">Home</option>
+              <option value="school">School</option>
+            </select>
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <div>
+        <button class="writebutton" id="writebutton">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+      </div>
+    <script src="dashboard.js">
+    </script>
+</body>
+</html>
